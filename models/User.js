@@ -10,7 +10,7 @@ const userSchema = mongoose.Schema({
         trim:true,
         unique : 1
     },
-    password:{
+    z:{
         type:String,
         minlength:5
     },
@@ -28,8 +28,6 @@ const userSchema = mongoose.Schema({
     },
     tokenExp: {     // 토큰 사용기간
         type:Number
-
-        //asdfasdfasdf
     }
 })
 
